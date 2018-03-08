@@ -1,0 +1,215 @@
+{
+  "name": "SGWorkflow",
+  "prefix": "sgf",
+  "uri": "http://tinybpm.belgacem.me/bpmn/2.0",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "SGFStartEvent",
+      "extends": [
+        "bpmn:StartEvent"
+      ],
+      "properties": [
+        {
+          "name": "isAsync",
+          "isAttr": true,
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "SGFServiceTask",
+      "extends": [
+        "bpmn:ServiceTask"
+      ],
+      "properties": [
+        {
+          "name": "isAsync",
+          "isAttr": true,
+          "type": "Boolean"
+        },
+        {
+          "name":"statusCodeVariable",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name":"responseBodyVariable",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name":"responseHeadersVariable",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "addIn",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "authHeader",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "otherHeaders",
+          "isAttr": true,
+          "type": "String"
+        },  
+        {
+          "name": "baseUrl",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "method",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "resource",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "contentType",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "accept",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "body",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "SGFUserTask",
+      "extends": [
+        "bpmn:UserTask"
+      ],
+      "properties": [
+        {
+          "name": "assignee",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "candidateGroups",
+          "isAttr": true,
+          "type": "String"
+        },        
+        {
+          "name": "candidateUsers",
+          "isAttr": true,
+          "type": "String"
+        },        
+        {
+          "name": "dueDate",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "SGFManualTask",
+      "extends": [
+        "bpmn:ManualTask"
+      ],
+      "properties": [
+        {
+          "name": "participants",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "SGFSequenceFlow",
+      "extends": [
+        "bpmn:SequenceFlow"
+      ],
+      "properties": [
+        {
+          "name": "seqCondition",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "SGFBusinessRuleTask",
+      "extends": [
+        "bpmn:BusinessRuleTask"
+      ],
+      "properties": [
+        {
+          "name": "dmnRef",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "dmnRefVer",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "resultVariable",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "SGFScriptTask",
+      "extends": [
+        "bpmn:ScriptTask"
+      ],
+      "properties": [
+        {
+          "name": "lang",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "code",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "resultVariable",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "isAsync",
+          "isAttr": true,
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "SGFSubProcess",
+      "extends": [
+        "bpmn:SubProcess"
+      ],
+      "properties": [
+        {
+          "name": "isAsync",
+          "isAttr": true,
+          "type": "Boolean"
+        }
+      ]
+    }
+  ]
+}

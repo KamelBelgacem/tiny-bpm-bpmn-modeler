@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TinyBPM BPMN Modeler v0.1a</title>
+
+  <link rel="stylesheet" href="css/diagram-js.css" />
+  <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="content" id="js-drop-zone">
+
+    <div class="message intro">
+      <div class="note">
+        Drop BPMN diagram here or <a id="js-create-diagram" href>create a new one</a> to get started.
+      </div>
+    </div>
+
+    <div class="message error">
+      <div class="note">
+        <p>Could not display the BPMN 2.0 diagram!</p>
+
+        <div class="details">
+          <span>cause of the problem</span>
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="canvas" id="js-canvas"></div>
+    <div id="js-properties-panel"></div>
+  </div>
+
+  <ul class="buttons">
+    <li>
+      Download:
+    </li>
+    <li>
+      <a id="js-download-diagram" href title="Download BPMN diagram">
+        BPMN Diagram
+      </a>
+    </li>
+    <li>
+      <a id="js-download-svg" href title="Download as SVG image">
+        SVG Image
+      </a>
+    </li>
+  </ul>
+
+  <script src="index.js"></script>
+</html>

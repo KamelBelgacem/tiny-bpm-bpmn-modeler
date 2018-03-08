@@ -1,0 +1,49 @@
+{
+  "name": "bpmn-js-example-properties-panel-extension",
+  "version": "0.0.0",
+  "description": "A properties panel extension example",
+  "main": "app/index.js",
+  "scripts": {
+    "all": "grunt",
+    "dev": "grunt auto-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/bpmn-js-examples"
+  },
+  "keywords": [
+    "bpmnjs-example"
+  ],
+  "author": {
+    "name": "Patrick Dehn",
+    "url": "https://github.com/pedesen"
+  },
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "grunt": "~1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "load-grunt-tasks": "~3.5.0"
+  },
+  "dependencies": {
+    "bpmn-js-properties-panel": "^0.20.0",
+    "camunda-bpmn-moddle": "^0.13.0",
+    "bpmn-js": "^0.22.1",
+    "diagram-js": "^0.28.1",
+    "inherits": "^2.0.1",
+    "jquery": "^3.3.1",
+    "lodash": "^3.0.0"
+  }
+}
