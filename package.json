@@ -27,7 +27,7 @@
   "license": "MIT",
   "devDependencies": {
     "brfs": "^1.2.0",
-    "grunt": "~1.0.1",
+    "grunt": "~1.5.2",
     "grunt-browserify": "^5.0.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-connect": "~1.0.2",
